@@ -52,3 +52,18 @@ get("/dice/5/4") do
 
   erb(:five_four)
 end
+
+get("/dice/:number_of_dice/6") do
+
+  @all_dice = params.fetch("number_of_dice").to_i
+
+  @rolls = []
+
+  @all_dice.times do
+    die = rand(1..6)
+
+    @rolls.push(die)
+  end
+
+  erb(:flexible)
+end
