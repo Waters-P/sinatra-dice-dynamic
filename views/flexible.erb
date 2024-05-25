@@ -1,6 +1,6 @@
-<h1><%= @all_dice %> dice 6 sides </h1>
+<h1><%= @all_dice %>d<%= @all_sides %></h1>
 
-<%= params.fetch("number_of_dice") %>
+<%= params.fetch("all_dice") %>
 
 <ul>
   <% @rolls.each do |a_roll| %>
