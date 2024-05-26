@@ -21,5 +21,5 @@ get("/dice/:all_dice/:all_sides") do
     @rolls.push(die)
   end
 
-  erb(:flexible)
+  erb(:route_method)
 end
