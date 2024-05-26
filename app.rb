@@ -16,7 +16,7 @@ get("/dice/:all_dice/:all_sides") do
   @rolls = []
 
   @all_dice.times do
-    die = rand(1..6)
+    die = rand(1..@all_sides)
 
     @rolls.push(die)
   end
